@@ -1,0 +1,9 @@
+{\rtf1\ansi\uc0\deff0{\fonttbl{\f0\fmodern\fprq1\fcharset0;}}{\colortbl;\red187\green187\blue187;\red61\green123\blue123;\red156\green101\blue0;\red0\green128\blue0;\red176\green0\blue64;\red102\green102\blue102;\red170\green34\blue255;\red0\green0\blue255;\red203\green63\blue56;\red25\green23\blue124;\red136\green0\blue0;\red118\green118\blue0;\red113\green113\blue113;\red104\green120\blue34;\red186\green33\blue33;\red164\green90\blue119;\red170\green93\blue31;\red0\green0\blue128;\red128\green0\blue128;\red160\green0\blue0;\red0\green132\blue0;\red228\green0\blue0;\red0\green68\blue221;\red255\green0\blue0;}\f0 {\cf4\b def} {\cf8 proof_of_work}(block, difficulty):{\cf1 \par
+}    nonce {\cf6 =} {\cf6 0}{\cf1 \par
+}    {\cf4\b while} {\cf4\b True}:{\cf1 \par
+}        block{\cf6 .}nonce {\cf6 =} nonce{\cf1 \par
+}        {\cf4 hash} {\cf6 =} calculate_hash(block){\cf1 \par
+}        {\cf4\b if} {\cf4 hash}{\cf6 .}startswith({\cf15 '}{\cf15 0}{\cf15 '} {\cf6 *} difficulty):{\cf1 \par
+}            {\cf4\b return} nonce{\cf1 \par
+}        nonce {\cf6 +}{\cf6 =} {\cf6 1}{\cf1 \par
+}}
